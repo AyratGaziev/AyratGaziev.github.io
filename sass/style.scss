@@ -1,0 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+body{
+  background:  linear-gradient(90deg, #30CFD0 0%, #330867 99.61%) repeat;
+  height: 100vh;
+}
+h1{
+  font-size: 28px;
+  font-weight: 700;
+}
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container{
+  max-width: 1140px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+  
+.about {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 25px 0;
+  &__me {
+      width: 40%;
+      margin-left: 40px;
+  }
+  &__photo {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+  &__list{
+    margin-top: 25px;
+    list-style:square;    
+  } 
+  &__list-item {
+    line-height: 21px;
+    margin: 17px 0;
+  }     
+  &__skills{
+    margin-top: 25px;
+    width: 40%;
+  }
+}
+  
+.works{
+  width: 80%;
+  margin: 0 auto;
+
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;    
+  }
+  &__card{
+    width: 30%;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+
+  }
+  &__card-img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 98px;
+    height: 98px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  #tetris{
+    background-image: url(../img/tetris-black.png);  
+  }  
+  #tetris:hover {
+    background-image: url(../img/tetris.png);
+  }
+  #dino{
+    background-image: url(../img/dino-black.png);
+  }
+  #dino:hover{
+    background-image: url(../img/dino.png);
+  }
+  #bookkeeping{
+    background-image: url(../img/bookkeeping-black.png);
+  }
+  #bookkeeping:hover{
+    background-image: url(../img/bookkeeping.png);
+  }
+  h3{
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__text{
+    padding: 0 15px;
+  }
+  &__github-btn{
+    display: flex;
+    justify-content: center;
+  }
+  &__github{
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #516E8C;
+    border: none;
+    border-radius: 6px;
+    min-width: 115px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    outline: none;
+    cursor: pointer;
+  }
+  &__github-img{
+    display: block;
+    float: left;
+  }
+  &__github-text{
+    float: left;
+    color:#ffffff;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  &__github-text-bold{
+    font-weight: 700;
+    font-size: 12px;
+  }
+  hr{
+    height: 2px;
+    background-color: #E5E5E5;
+    border: 0px none;
+  }
+  margin-bottom: 20px;
+}
+
+.footer{
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+  img{
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container{
+    max-width: 1000px;
+  }
+  .works__text{
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  * {
+    font-size: 16px;
+  }
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 22px;
+  }
+}
+@media (max-width: 670px) {
+  .about{
+    padding-bottom: 14px;
+    &__photo {
+      width: 200px;
+      margin: 20px auto;
+    }
+    &__list-item{
+      margin: 14px 0;
+    }
+  }
+  .works{
+    width: 90%;
+    &__card{
+      width: 32%;
+    }
+  }
+}
+@media (max-width: 620px) {
+  * {
+    font-size: 14px;
+  }
+  .about{
+    padding-bottom: 14px;
+    &__list-item{
+      margin: 12px 0;
+    }
+  }
+  .works{
+    &__text{
+      font-size: 12px;
+    }
+    &__card-img {
+      width: 90px;
+      height: 90px;
+    }
+
+  }
+  
+  .footer{
+    img{
+      width: 32px;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .about{
+    flex-direction: column;
+    align-items: center;
+    &__me{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+    }
+    &__photo{
+      width: 180px;
+      height: 100%;
+      margin: 0;
+    }
+    &__skills{
+      width: 83%;
+    }
+    &__list-item{
+        margin: 5px 0;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about{
+    &__me{
+      margin: 0;
+      width: 95%;
+    }
+  }
+  .works{
+    &__wrap{
+      flex-direction: column;
+    }
+    &__card{
+      width: 100%;
+    }
+    h3{
+      font-size: 24px;
+    }
+    &__text{
+      font-size: 16px;
+      padding: 15px 25px;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .about{
+    &__me{
+      width: 100%;
+      flex-direction: column;
+    }
+    &__photo{
+      margin-bottom: 25px;
+    }
+    &__me-text{
+      width: 100%;
+      padding-left: 35px;
+    }
+    &__skills{
+      width: 100%;
+      padding-left: 35px;
+    }
+  }
+}

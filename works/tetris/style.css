@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MuseoModerno", cursive;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    width: 400px;
+    height: 600px;
+    border: 2px solid #264653;
+    box-sizing: content-box;
+    position: relative;
+}
+.row {
+    display: flex;
+}
+.box {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid#264653;
+}
+.start {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 240px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.753);
+}
+.start__img {
+    width: 236px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+.start__title-wrapper {
+    display: flex;
+}
+.start__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.start__btn {
+    background-image: url("./img/play.png");
+    margin-left: 10px;
+}
+.right-wrapper {
+    position: relative;
+}
+.score {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.end {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 240px;
+    background-color: rgba(95, 42, 165, 0.747);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 5px 0;
+
+    display: none;
+}
+.end__score,
+.end__high {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.end__replay {
+    margin: 15px 0;
+    background-image: url("./img/replay.png");
+}
+.end__replay:hover,
+.start__btn:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+}
+
+.arrow {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.arrow button {
+    background-size: 75px 75px;
+    width: 75px;
+    height: 75px;
+}
+.arrow__up-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow__down-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.arrow__up {
+    background-image: url("./img/rotate.png");
+    transform: rotateZ(-90deg);
+}
+
+.arrow__left {
+    background-image: url("./img/arrow.png");
+    transform: rotateZ(-180deg);
+}
+
+.arrow__down {
+    background-image: url("./img/arrow.png");
+    transform: rotateZ(90deg);
+}
+
+.arrow__right {
+    background-image: url("./img/arrow.png");
+}
+.github {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.github__icon {
+    background-image: url("./img/github.png");
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+}
+
+@media (max-width: 768px) {
+    .arrow {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        width: 300px;
+        height: 450px;
+    }
+    .box {
+        width: 30px;
+        height: 30px;
+    }
+    .score {
+        margin-left: 2px;
+        font-size: 12px;
+    }
+    .arrow button {
+        width: 65px;
+        height: 65px;
+        background-size: 65px 65px;
+    }
+}
+
+@media (max-width: 413px) {
+    .wrapper {
+        width: 250px;
+        height: 375px;
+    }
+    .box {
+        width: 25px;
+        height: 25px;
+    }
+    .arrow {
+        margin-left: 5px;
+    }
+    .arrow button {
+        width: 55px;
+        height: 55px;
+        background-size: 55px 55px;
+    }
+}
+@media (max-width: 360px) {
+    .wrapper {
+        width: 200px;
+        height: 300px;
+    }
+    .box {
+        width: 20px;
+        height: 20px;
+    }
+}
