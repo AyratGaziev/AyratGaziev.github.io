@@ -1,113 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>AyratGaziev</title>
-</head>
-<body>
-    <div class="container">
-        <div class="about">
-            <div class="about__me">
-                <img class="about__photo" src="./img/photo.jpg" alt="photo">
-                <div class="about__me-text">
-                    <h2>Айрат Газиев</h2>
-                    <h1>Frontend Developer</h1>                
-                    <ul class = "about__list">
-                        <li class = "about__list-item">Возраст: 30 лет</li>
-                        <li class = "about__list-item">Высшее техническое образование</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>AyratGaziev</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="about">
+                <div class="about__me">
+                    <img
+                        class="about__photo"
+                        src="./img/photo.jpg"
+                        alt="photo"
+                    />
+                    <div class="about__me-text">
+                        <h2>Айрат Газиев</h2>
+                        <h1>Frontend Developer</h1>
+                        <ul class="about__list">
+                            <li class="about__list-item">Возраст: 31 год</li>
+                            <li class="about__list-item">
+                                Высшее техническое образование
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__skills">
+                    <h2>Навыки:</h2>
+                    <ul class="about__list">
+                        <li class="about__list-item">
+                            Знание опыт работы с JS(ES6+)
+                        </li>
+                        <li class="about__list-item">
+                            Знание frontend (HTML/CSS) разработки.
+                        </li>
+                        <li class="about__list-item">
+                            Опыт работы с SCSS/SASS
+                        </li>
+                        <li class="about__list-item">Адаптивная верстка</li>
+                        <li class="about__list-item">Опыт работы с React</li>
+                        <li class="about__list-item">
+                            Умение разрабатывать на React Hooks + Redux(Redux
+                            Toolkit)
+                        </li>
+                        <li class="about__list-item">Знание Git</li>
+                        <li class="about__list-item">
+                            Базовые знания по Typescript, Node.js, Express.js
+                        </li>
+                        <li class="about__list-item">
+                            Английский на уровне чтения документации
+                        </li>
                     </ul>
-                </div>              
-                
+                </div>
             </div>
-            <div class="about__skills">
-                <h2>Навыки:</h2>
-                <ul class = "about__list">
-                    <li class = "about__list-item">Знание опыт работы с JS(ES6+)</li>
-                    <li class = "about__list-item">Знание frontend (HTML/CSS) разработки.</li>
-                    <li class = "about__list-item">Опыт работы с SCSS/SASS</li>
-                    <li class = "about__list-item">Адаптивная верстка</li>
-                    <li class = "about__list-item">Опыт работы с React.</li>
-                    <li class = "about__list-item">Умение разрабатывать на React Hooks + Redux</li>
-                    <li class = "about__list-item">Знание Git</li>
-                    <li class = "about__list-item">Английский на уровне чтения документации</li>
-                </ul>
+
+            <div class="desr">
+                <h2>О себе:</h2>
+                <div class="desr__text">
+                    Я занимаюсь изучением фронтенд разработки более полутора
+                    лет. У меня нет опыта коммерческой разработки, но есть
+                    желаение работать в сфере фронтенда. За пройденное время
+                    были созданы небольшие пет проекты, которые представлены
+                    ниже.
+                </div>
             </div>
+
+            <div class="works">
+                <h2>Работы:</h2>
+                <div class="works__card works__card_wide">
+                    <a
+                        href="https://shop-by-ayrat.netlify.app/"
+                        id="myshop"
+                        class="works__card-img"
+                    ></a>
+                    <div class="works__descr">
+                        <h3>MyShop</h3>
+                        <div class="works__text works__text_wide">
+                            Небольшой интернет магазин. Клиент написан на React
+                            с применением React Hooks, Typescript, Redux (Redux
+                            Toolkit). API написан на Express с базой на MongoDB
+                            с применением библиотеки Mongoose.
+                        </div>
+                        <div class="works__btn-wrap">
+                            <div class="works__github-btn">
+                                <a
+                                    href="https://github.com/AyratGaziev/my-shop-client"
+                                    class="works__github"
+                                >
+                                    <img
+                                        src="./img/github-white.png"
+                                        alt="github"
+                                        class="works__github-img"
+                                    />
+                                    <div class="works__github-text">
+                                        Client on<br /><span
+                                            class="works__github-text-bold"
+                                            >GITHUB</span
+                                        >
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="works__github-btn">
+                                <a
+                                    href="https://github.com/AyratGaziev/my-shop-api"
+                                    class="works__github"
+                                >
+                                    <img
+                                        src="./img/github-white.png"
+                                        alt="github"
+                                        class="works__github-img"
+                                    />
+                                    <div class="works__github-text">
+                                        API on<br /><span
+                                            class="works__github-text-bold"
+                                            >GITHUB</span
+                                        >
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__wrap">
+                    <div class="works__card">
+                        <a
+                            href="./works/tetris/index.html"
+                            id="tetris"
+                            class="works__card-img"
+                        ></a>
+                        <h3>Tetris</h3>
+                        <div class="works__text">
+                            Классический тетрис. Написан c использованием JQuery
+                            и JavaScript классов
+                        </div>
+                        <div class="works__github-btn">
+                            <a
+                                href="https://github.com/AyratGaziev/Tetris"
+                                class="works__github"
+                            >
+                                <img
+                                    src="./img/github-white.png"
+                                    alt="github"
+                                    class="works__github-img"
+                                />
+                                <div class="works__github-text">
+                                    view on<br /><span
+                                        class="works__github-text-bold"
+                                        >GITHUB</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__card">
+                        <a
+                            href="./works/dino/index.html"
+                            id="dino"
+                            class="works__card-img"
+                        ></a>
+                        <h3>Dino Game</h3>
+                        <div class="works__text">
+                            Игра про прыгающего динозавра. Написана на чистом
+                            JavaScript с использованием Canvas и JS классов
+                        </div>
+                        <div class="works__github-btn">
+                            <a
+                                href="https://github.com/AyratGaziev/DinoGame"
+                                class="works__github"
+                            >
+                                <img
+                                    src="./img/github-white.png"
+                                    alt="github"
+                                    class="works__github-img"
+                                />
+                                <div class="works__github-text">
+                                    view on<br /><span
+                                        class="works__github-text-bold"
+                                        >GITHUB</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__card">
+                        <a
+                            href="./works/bookkeeping/index.html"
+                            id="bookkeeping"
+                            class="works__card-img"
+                        ></a>
+                        <h3>Home Bookkeeping</h3>
+                        <div class="works__text">
+                            Веб приложение для учета доходов/расходов. Написана
+                            на React с использованием React Hooks
+                        </div>
+                        <div class="works__github-btn">
+                            <a
+                                href="https://github.com/AyratGaziev/HomeBookkeeping"
+                                class="works__github"
+                            >
+                                <img
+                                    src="./img/github-white.png"
+                                    alt="github"
+                                    class="works__github-img"
+                                />
+                                <div class="works__github-text">
+                                    view on<br /><span
+                                        class="works__github-text-bold"
+                                        >GITHUB</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+            </div>
+
+            <footer class="footer">
+                <a href="mailto:ayratgazievmail@gmail.com">
+                    <img src="./img/email.png" alt="email" />
+                </a>
+                <a href="https://t.me/gaziev_ayrat">
+                    <img src="./img/telegram.png" alt="telegram" />
+                </a>
+                <a href="https://github.com/AyratGaziev">
+                    <img src="./img/github.png" alt="github" />
+                </a>
+            </footer>
         </div>
-
-        <div class="works">
-            <h2>Работы:</h2>
-            <div class="works__wrap">
-                <div class="works__card">
-                    <a href="./works/tetris/index.html" id="tetris" class="works__card-img"></a>
-                    <h3>Tetris</h3>
-                    <div class="works__text">
-                        Классический тетрис.
-                        Написан c использованием JQuery
-                        и JavaScript классов
-                    </div>
-                    <div class="works__github-btn">
-                        <a href="https://github.com/AyratGaziev/Tetris" class="works__github">
-                            <img src="./img/github-white.png" alt="github" class="works__github-img">
-                            <div class="works__github-text">
-                                view on<br><span class="works__github-text-bold">GITHUB</span> 
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="works__card">
-                    <a href="./works/dino/index.html"  id="dino" class="works__card-img"></a>
-                    <h3>Dino Game</h3>
-                    <div class="works__text">
-                        Игра про прыгающего динозавра. Написана на чистом JavaScript с использованием Canvas и JS классов
-                    </div>
-                    <div class="works__github-btn">
-                        <a href="https://github.com/AyratGaziev/DinoGame" class="works__github">
-                            <img src="./img/github-white.png" alt="github" class="works__github-img">
-                            <div class="works__github-text">
-                                view on<br><span class="works__github-text-bold">GITHUB</span> 
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="works__card">
-                    <a href="./works/bookkeeping/index.html"  id="bookkeeping" class="works__card-img"></a>
-                    <h3>Home Bookkeeping</h3>
-                    <div class="works__text">
-                        Веб приложение для учета доходов/расходов. Написана на React с использованием React Hooks
-                    </div>
-                    <div class="works__github-btn">
-                        <a href="https://github.com/AyratGaziev/HomeBookkeeping" class="works__github">
-                            <img src="./img/github-white.png" alt="github" class="works__github-img">
-                            <div class="works__github-text">
-                                view on<br><span class="works__github-text-bold">GITHUB</span> 
-                            </div>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div> 
-
-             <hr>     
-
-        </div>   
-        
-        <footer class="footer">
-            <a href="mailto:ayratgazievmail@gmail.com">
-                <img src="./img/email.png" alt="email">                
-            </a>
-            <a href="https://t.me/gaziev_ayrat">
-                <img src="./img/telegram.png" alt="telegram">                
-            </a>
-            <a href="https://github.com/AyratGaziev">
-                <img src="./img/github.png" alt="github">
-            </a>
-        </footer>
-        
-    </div>
-    <script src ='./index.js'></script>
-</body>
+        <script src="./index.js"></script>
+    </body>
 </html>

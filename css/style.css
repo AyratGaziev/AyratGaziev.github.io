@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px; }
 
 body {
-  background: linear-gradient(90deg, #30CFD0 0%, #330867 99.61%) repeat;
+  background: linear-gradient(90deg, #30cfd0 0%, #330867 99.61%) repeat;
   height: 100vh; }
 
 h1 {
@@ -15,13 +15,22 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 15px; }
 
 .container {
   max-width: 1140px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   margin: 0 auto; }
+
+.desr {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+  .desr__text {
+    text-align: justify;
+    line-height: 1.4; }
 
 .about {
   display: flex;
@@ -56,11 +65,17 @@ h2 {
     margin-top: 10px; }
   .works__card {
     width: 30%;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
-    background: #FFFFFF;
+    background: #ffffff;
     margin-bottom: 20px; }
+  .works__card_wide {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+  .works__descr {
+    padding: 15px; }
   .works__card-img {
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -83,19 +98,30 @@ h2 {
     background-image: url(../img/bookkeeping-black.png); }
   .works #bookkeeping:hover {
     background-image: url(../img/bookkeeping.png); }
+  .works #myshop {
+    background-image: url(../works/myshop/shop-black.png);
+    flex-shrink: 0; }
+  .works #myshop:hover {
+    background-image: url(../works/myshop/shop.png); }
   .works h3 {
     text-align: center;
     margin-bottom: 5px; }
   .works__text {
     padding: 0 15px; }
-  .works__github-btn {
+  .works__text_wide {
+    max-width: 660px; }
+  .works__btn-wrap {
     display: flex;
     justify-content: center; }
+  .works__github-btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px; }
   .works__github {
     display: inline-block;
     justify-content: space-around;
     align-items: center;
-    background-color: #516E8C;
+    background-color: #516e8c;
     border: none;
     border-radius: 6px;
     min-width: 115px;
@@ -117,7 +143,7 @@ h2 {
     font-size: 12px; }
   .works hr {
     height: 2px;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     border: 0px none; }
 
 .footer {
@@ -134,7 +160,9 @@ h2 {
   .container {
     max-width: 1000px; }
   .works__text {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .works__text_wide {
+    max-width: 500px; } }
 
 @media (max-width: 900px) {
   * {
@@ -142,7 +170,9 @@ h2 {
   h1 {
     font-size: 24px; }
   h2 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .works__text_wide {
+    max-width: 360px; } }
 
 @media (max-width: 670px) {
   .about {
@@ -155,7 +185,9 @@ h2 {
   .works {
     width: 90%; }
     .works__card {
-      width: 32%; } }
+      width: 32%; }
+    .works__card_wide {
+      width: 100%; } }
 
 @media (max-width: 620px) {
   * {
@@ -169,6 +201,8 @@ h2 {
   .works__card-img {
     width: 90px;
     height: 90px; }
+  .works__text_wide {
+    max-width: 300px; }
   .footer img {
     width: 32px; } }
 
@@ -188,7 +222,13 @@ h2 {
     .about__skills {
       width: 83%; }
     .about__list-item {
-      margin: 5px 0; } }
+      margin: 5px 0; }
+  .works__card_wide {
+    flex-direction: column; }
+  .works__text_wide {
+    max-width: 100%; }
+  .works__descr {
+    padding: 0; } }
 
 @media (max-width: 500px) {
   .about__me {
