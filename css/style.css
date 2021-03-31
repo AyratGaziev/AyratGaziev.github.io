@@ -65,7 +65,7 @@ h2 {
     justify-content: space-between;
     margin-top: 10px; }
   .works__card {
-    width: 30%;
+    width: 32.5%;
     border: 1px solid #e5e5e5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
@@ -88,22 +88,54 @@ h2 {
     margin-bottom: 10px;
     display: block; }
   .works #tetris {
-    background-image: url(../img/tetris-black.png); }
+    background-image: url(../img/tetris.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .works #tetris:hover {
-    background-image: url(../img/tetris.png); }
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
   .works #dino {
-    background-image: url(../img/dino-black.png); }
-  .works #dino:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     background-image: url(../img/dino.png); }
+  .works #dino:hover {
+    -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: grayscale(0%); }
   .works #bookkeeping {
-    background-image: url(../img/bookkeeping-black.png); }
-  .works #bookkeeping:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     background-image: url(../img/bookkeeping.png); }
+  .works #bookkeeping:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
   .works #myshop {
-    background-image: url(../works/myshop/shop-black.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-image: url(../works/myshop/shop.png);
     flex-shrink: 0; }
   .works #myshop:hover {
-    background-image: url(../works/myshop/shop.png); }
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+  .works #hiking {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-image: url(../works/hiking/mountain.png);
+    flex-shrink: 0; }
+  .works #hiking:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+  .works #rocket {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-image: url(../works/rocket/rocket.png);
+    flex-shrink: 0;
+    width: 70px;
+    height: 98px; }
+  .works #rocket:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
   .works h3 {
     text-align: center;
     margin-bottom: 5px; }
@@ -113,11 +145,12 @@ h2 {
     max-width: 660px; }
   .works__btn-wrap {
     display: flex;
+    flex-direction: column;
     justify-content: center; }
   .works__github-btn {
     display: flex;
     justify-content: center;
-    margin: 10px; }
+    margin: 10px 10px; }
   .works__github {
     display: inline-block;
     justify-content: space-around;
@@ -127,7 +160,7 @@ h2 {
     border-radius: 6px;
     min-width: 115px;
     padding: 5px 10px;
-    margin: 10px auto;
+    margin: 0px auto;
     outline: none;
     cursor: pointer; }
   .works__github-img {

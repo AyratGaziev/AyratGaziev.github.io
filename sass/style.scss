@@ -74,7 +74,7 @@ h2 {
         margin-top: 10px;
     }
     &__card {
-        width: 30%;
+        width: 32.5%;
         border: 1px solid #e5e5e5;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 12px;
@@ -103,30 +103,68 @@ h2 {
     }
 
     #tetris {
-        background-image: url(../img/tetris-black.png);
+        background-image: url(../img/tetris.png);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
     #tetris:hover {
-        background-image: url(../img/tetris.png);
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
     }
     #dino {
-        background-image: url(../img/dino-black.png);
-    }
-    #dino:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
         background-image: url(../img/dino.png);
     }
-    #bookkeeping {
-        background-image: url(../img/bookkeeping-black.png);
+    #dino:hover {
+        -webkit-filter: grayscale(0%);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: grayscale(0%);
     }
-    #bookkeeping:hover {
+    #bookkeeping {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
         background-image: url(../img/bookkeeping.png);
     }
+    #bookkeeping:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
     #myshop {
-        background-image: url(../works/myshop/shop-black.png);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        background-image: url(../works/myshop/shop.png);
         flex-shrink: 0;
     }
     #myshop:hover {
-        background-image: url(../works/myshop/shop.png);
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
     }
+
+    #hiking {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        background-image: url(../works/hiking/mountain.png);
+        flex-shrink: 0;
+    }
+    #hiking:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    #rocket {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        background-image: url(../works/rocket/rocket.png);
+        flex-shrink: 0;
+        width: 70px;
+        height: 98px;
+    }
+    #rocket:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
     h3 {
         text-align: center;
         margin-bottom: 5px;
@@ -139,12 +177,13 @@ h2 {
     }
     &__btn-wrap {
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
     &__github-btn {
         display: flex;
         justify-content: center;
-        margin: 10px;
+        margin: 10px 10px;
     }
     &__github {
         display: inline-block;
@@ -155,7 +194,7 @@ h2 {
         border-radius: 6px;
         min-width: 115px;
         padding: 5px 10px;
-        margin: 10px auto;
+        margin: 0px auto;
         outline: none;
         cursor: pointer;
     }
