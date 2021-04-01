@@ -33,6 +33,11 @@ h2 {
     text-align: justify;
     line-height: 1.4; }
 
+.text_bottom {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 800ms ease-out; }
+
 .about {
   display: flex;
   margin: 0 auto;
@@ -46,6 +51,9 @@ h2 {
     width: 250px;
     height: auto;
     margin: 0 auto; }
+  .about__photo_animte {
+    opacity: 0;
+    transition: all 900ms; }
   .about__list {
     margin-top: 25px;
     list-style: square; }
@@ -71,6 +79,18 @@ h2 {
     border-radius: 12px;
     background: #ffffff;
     margin-bottom: 20px; }
+  .works__card_animte-left {
+    transform: translateX(-20px) scale(0.9);
+    opacity: 0;
+    transition: 600ms opacity linear, 1400ms transform ease, 300ms scale linear; }
+  .works__card_animte-bottom {
+    transform: translateY(20px) scale(0.9);
+    opacity: 0;
+    transition: 600ms opacity linear, 1400ms transform ease, 300ms scale linear; }
+  .works__card_animte-right {
+    transform: translateX(20px) scale(0.9);
+    opacity: 0;
+    transition: 600ms opacity linear, 1400ms transform ease, 300ms scale linear; }
   .works__card_wide {
     width: 100%;
     display: flex;
@@ -189,6 +209,10 @@ h2 {
   padding-bottom: 30px; }
   .footer img {
     display: block; }
+
+.animated {
+  transform: translate(0) scale(1);
+  opacity: 1; }
 
 @media (max-width: 1200px) {
   .container {
