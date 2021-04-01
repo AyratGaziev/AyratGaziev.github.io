@@ -259,6 +259,11 @@ h2 {
     img {
         display: block;
     }
+    &__link {
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 600ms ease-out;
+    }
 }
 .animated {
     transform: translate(0) scale(1);
