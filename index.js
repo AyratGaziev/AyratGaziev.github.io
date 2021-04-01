@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".animte");
+const animElements = document.querySelectorAll(".animte");
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((el) => {
@@ -14,6 +14,6 @@ const observer = new IntersectionObserver(
         threshold: 1
     }
 );
-cards.forEach((el) => {
+animElements.forEach((el) => {
     observer.observe(el);
 });
