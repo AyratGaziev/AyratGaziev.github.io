@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.fccbecaf.chunk.css",
-    "main.js": "./static/js/main.ee5e8d47.chunk.js",
-    "main.js.map": "./static/js/main.ee5e8d47.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.3a9877a5.js",
-    "runtime-main.js.map": "./static/js/runtime-main.3a9877a5.js.map",
-    "static/js/2.dcc1494d.chunk.js": "./static/js/2.dcc1494d.chunk.js",
-    "static/js/2.dcc1494d.chunk.js.map": "./static/js/2.dcc1494d.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.fccbecaf.chunk.css.map": "./static/css/main.fccbecaf.chunk.css.map",
-    "static/js/2.dcc1494d.chunk.js.LICENSE.txt": "./static/js/2.dcc1494d.chunk.js.LICENSE.txt"
+    "main.css": "/works/react-cats/static/css/main.fccbecaf.chunk.css",
+    "main.js": "/works/react-cats/static/js/main.c3bc67ef.chunk.js",
+    "main.js.map": "/works/react-cats/static/js/main.c3bc67ef.chunk.js.map",
+    "runtime-main.js": "/works/react-cats/static/js/runtime-main.b55d2693.js",
+    "runtime-main.js.map": "/works/react-cats/static/js/runtime-main.b55d2693.js.map",
+    "static/js/2.93e889ac.chunk.js": "/works/react-cats/static/js/2.93e889ac.chunk.js",
+    "static/js/2.93e889ac.chunk.js.map": "/works/react-cats/static/js/2.93e889ac.chunk.js.map",
+    "index.html": "/works/react-cats/index.html",
+    "static/css/main.fccbecaf.chunk.css.map": "/works/react-cats/static/css/main.fccbecaf.chunk.css.map",
+    "static/js/2.93e889ac.chunk.js.LICENSE.txt": "/works/react-cats/static/js/2.93e889ac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3a9877a5.js",
-    "static/js/2.dcc1494d.chunk.js",
+    "static/js/runtime-main.b55d2693.js",
+    "static/js/2.93e889ac.chunk.js",
     "static/css/main.fccbecaf.chunk.css",
-    "static/js/main.ee5e8d47.chunk.js"
+    "static/js/main.c3bc67ef.chunk.js"
   ]
 }
